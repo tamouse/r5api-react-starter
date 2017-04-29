@@ -16,7 +16,7 @@ processes specified in a ~Procfile~.
 
 ** step-002/users
    :LOGBOOK:
-   CLOCK: [2017-04-29 Sat 14:32]
+   CLOCK: [2017-04-29 Sat 14:32]--[2017-04-29 Sat 15:14] =>  0:42
    :END:
 
    Add a users resource to the project.
