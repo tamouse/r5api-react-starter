@@ -1,1 +1,15 @@
-Created with: `rails new r5api-react-starter --no-rc --webpack=react`
+* Rails 5 API-based application with webpack and react
+
+Created with: ~rails new r5api-react-starter --no-rc --webpack=react~
+
+** step-001/foreman
+
+New Rails 5.1 apps built with webpack need to have two server-type
+processes running during development:
+
+1. the usual rails server
+2. webpack-dev-server, which is serving up the webpacked components,
+   hot refreshing them as they're developed.
+
+To manage this, we're installing [[https://github.com/ddollar/foreman][foreman]], which can run concurrent
+processes specified in a ~Procfile~.
