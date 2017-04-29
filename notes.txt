@@ -2,6 +2,19 @@
 
 Created with: ~rails new r5api-react-starter --no-rc --webpack=react~
 
+** Plan
+
+   Step by step, from a basic initial set up, create a React SPA
+   blogging platform (of course), using the Rails server as an API
+   *only*. The only page that will be built and sent will be the basic
+   app page that will load the React App component. Everything else,
+   including styles, scripts, images, etc., i.e., all the bits of a
+   user-facing web app, will be handled via webpacker.
+
+   Along the way, I'll include user signup, login, and authentication
+   using JSON Web Tokens.
+
+
 ** step-001/foreman
 
 New Rails 5.1 apps built with webpack need to have two server-type
@@ -42,3 +55,30 @@ processes specified in a ~Procfile~.
    - pry-rails
    - guard
    - guard-minitest
+
+** step-004/initial-react
+   :LOGBOOK:
+   CLOCK: [2017-04-29 Sat 16:21]--[2017-04-29 Sat 16:53] =>  0:32
+   :END:
+
+   Okay, let's get some initial react stuff working.
+
+   This isn't necessarily obvious, but we go out to the [[https://github.com/rails/webpacker][webpacker gem]]
+   on github and take a look at things to get started.
+
+   The ~helloworld~ react component is in
+   ~apps/javascript/packs/helloworld.js~. We'll need a place to put
+   that onto a page that gets delivered to the user.
+
+   First, we need to create a controller that can deliver the
+   component, and add the ~javascript_pack_tag~ to it. I made a static
+   ~PagesController~ for this.
+
+   #+BEGIN_SRC bash
+     bin/rails g controller Pages index --no-helper --no-assets --no-javascripts --no-stylesheets
+   #+END_SRC
+
+   I'm also going to set the root route to this page.
+
+   So that's good, we can put React components on a regular page
+   served up from Rails.
