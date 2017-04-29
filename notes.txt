@@ -1,0 +1,1 @@
+Created with: `rails new r5api-react-starter --no-rc --webpack=react`
