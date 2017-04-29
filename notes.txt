@@ -82,3 +82,12 @@ processes specified in a ~Procfile~.
 
    So that's good, we can put React components on a regular page
    served up from Rails.
+
+** step-005/webpacker-only
+   :LOGBOOK:
+   CLOCK: [2017-04-29 Sat 16:56]--[2017-04-29 Sat 17:13] =>  0:17
+   :END:
+
+   In this step, I'm going to remove most of the stuff in ~app/assets~
+   and the unused ~app/javascript/packs/~ files, and create a new
+   React component for our application.
