@@ -32,3 +32,13 @@ processes specified in a ~Procfile~.
      - admin, boolean, false, non-null
      - ~has_secure_password~
    - write tests
+
+** step-003/tools
+   :LOGBOOK:
+   CLOCK: [2017-04-29 Sat 15:16]--[2017-04-29 Sat 16:10] =>  0:54
+   :END:
+
+   Adding in some tools:
+   - pry-rails
+   - guard
+   - guard-minitest

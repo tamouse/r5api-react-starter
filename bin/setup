@@ -19,6 +19,7 @@ chdir APP_ROOT do
   system('bundle check') || system!('bundle install')
 
   system!('bundle binstub foreman')
+  system!('bundle binstub guard')
 
   # Install JavaScript dependencies if using Yarn
   system('bin/yarn')
