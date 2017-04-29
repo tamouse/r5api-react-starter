@@ -110,7 +110,30 @@ processes specified in a ~Procfile~.
    React component for our application.
 ** step-006/jest
    :LOGBOOK:
-   CLOCK: [2017-04-29 Sat 17:51]
+   CLOCK: [2017-04-29 Sat 17:51]--[2017-04-29 Sat 18:28] =>  0:37
    :END:
 
    Install, configure, and create some Jest tests.
+
+   Discovery: configuring Jest is not straight-forward for this app!
+
+   See: [[http://facebook.github.io/jest/docs/configuration.html]]
+
+   #+BEGIN_SRC javascript
+     "jest": {
+       "rootDir": "app/javascript/packs/",
+       "moduleFileExtensions": ["js", "jsx"],
+       "moduleDirectories": ["node_modules", "app/javascript/packs"]
+     }
+   #+END_SRC
+
+   Set the ~rootDir~ to 'app/javascript/packs' tells Jest to look
+   there for application tests.
+
+   I'm not sure what ~moduleDirectories~ is adding here, but it seems
+   to work.
+
+   *IMPORTANT!* Test files must follow the pattern: ~*.test.js?(x)~ in
+   order to be found by Jest -- a *dot* instead of an *underscore* as
+   in minitest!! I could probably get around this difference, but I'm
+   not going to bother to figure it out.

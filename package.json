@@ -31,11 +31,21 @@
     "webpack-merge": "^4.1.0"
   },
   "devDependencies": {
+    "jest": "^19.0.2",
     "webpack-dev-server": "^2.4.5"
   },
   "scripts": {
     "start": "bin/foreman start",
     "preguard": "bin/webpack",
-    "guard": "bin/guard"
+    "guard": "bin/guard",
+    "test:jest": "jest",
+    "test:rails": "bin/rails test",
+    "test": "npm run test:jest && npm run test:rails"
+
+  },
+  "jest": {
+    "rootDir": "app/javascript/packs/",
+    "moduleFileExtensions": ["js", "jsx"],
+    "moduleDirectories": ["node_modules", "app/javascript/packs"]
   }
 }
