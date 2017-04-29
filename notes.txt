@@ -12,7 +12,24 @@ Created with: ~rails new r5api-react-starter --no-rc --webpack=react~
    user-facing web app, will be handled via webpacker.
 
    Along the way, I'll include user signup, login, and authentication
-   using JSON Web Tokens.
+   using JSON Web Tokens. I'll be making use of the ~localStorage~ API
+   to keep track of the app token the server will be providing the
+   client.
+
+*** Testing
+
+    Just a word about testing: most of the time, the things I'm
+    learning about I just implement without focusing on how I would
+    test these in an actual application. I want to break that habit
+    here, and figure out how to do real application testing in both
+    halves of this, the Rails API server, and the React SPA. It will
+    be interesting to run both of these.
+
+    I've got guard set up on the Rails side, that should be pretty
+    nice. Selenium is included in the kit, but I'd prefer to use Jest
+    on the client side to make testing more fun, fast, and lighter
+    weight, saving the full integration stuff where it's truly needed.
+
 
 
 ** step-001/foreman
@@ -91,3 +108,9 @@ processes specified in a ~Procfile~.
    In this step, I'm going to remove most of the stuff in ~app/assets~
    and the unused ~app/javascript/packs/~ files, and create a new
    React component for our application.
+** step-006/jest
+   :LOGBOOK:
+   CLOCK: [2017-04-29 Sat 17:51]
+   :END:
+
+   Install, configure, and create some Jest tests.

@@ -32,5 +32,10 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^2.4.5"
+  },
+  "scripts": {
+    "start": "bin/foreman start",
+    "preguard": "bin/webpack",
+    "guard": "bin/guard"
   }
 }
