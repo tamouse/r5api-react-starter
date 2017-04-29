@@ -1,24 +1,31 @@
-# README
+# Rails 5.1 app with WebPack React and API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A sample Rails 5.1 application that includes webpack and react
+components.
 
-Things you may want to cover:
+See the [notes](notes.txt) file for progress and development notes.
 
-* Ruby version
+## Initialization
 
-* System dependencies
+Run:
 
-* Configuration
+    bin/setup
 
-* Database creation
+To install all the software needed and create the databases.
 
-* Database initialization
+## Testing
 
-* How to run the test suite
+Open a terminal window/tab and run:
 
-* Services (job queues, cache servers, search engines, etc.)
+    bin/guard
 
-* Deployment instructions
+for continuous testing while editing stuff.
 
-* ...
+## Development
+
+Open a terminal window/tab and run:
+
+    bin/foreman start
+
+to start up both the rails server and webpack-dev-server, then go to
+'http://localhost:5000' to interact with the application.
