@@ -3,7 +3,8 @@
 A sample Rails 5.1 application that includes webpack and react
 components.
 
-See the [docs](docs/) file for progress and development notes.
+See the [docs](https://tamouse.github.io/r5api-react-starter/) for
+progress and development notes.
 
 ## Initialization
 
