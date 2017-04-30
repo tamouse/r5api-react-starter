@@ -1,0 +1,36 @@
+<style>
+    .footer-col-1 { width: 60%; }
+    .footer-col-2 { width: 30%; }
+</style>
+
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+          <p>{{ site.description | escape }}</p>
+          <p>Fork this on <a href="https://github.com/tamouse/r5api-react-starter">github</a>.</p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
