@@ -26,6 +26,7 @@
     "react-dom": "^15.5.4",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
+    "styled-components": "^1.4.5",
     "webpack": "^2.4.1",
     "webpack-manifest-plugin": "^1.1.0",
     "webpack-merge": "^4.1.0"
@@ -41,11 +42,16 @@
     "test:jest": "jest",
     "test:rails": "bin/rails test",
     "test": "npm run test:jest && npm run test:rails"
-
   },
   "jest": {
     "rootDir": "app/javascript/packs/",
-    "moduleFileExtensions": ["js", "jsx"],
-    "moduleDirectories": ["node_modules", "app/javascript/packs"]
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "app/javascript/packs"
+    ]
   }
 }

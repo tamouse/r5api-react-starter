@@ -1,14 +1,5 @@
-// This will be the shell of our React application
-
 import React from 'react'
-import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
-
-const App = (props) => (<div>React App will go here</div>)
-
-document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(
-      <App/>,
-    document.body.appendChild(document.createElement('div'))
-  )
-})
+import {render} from 'react-dom'
+import Main from './app/'
+const App = () => (<div><Main /></div>)
+document.addEventListener('DOMContentLoaded', () => (render(<App/>, document.body.appendChild(document.createElement('div')))))
