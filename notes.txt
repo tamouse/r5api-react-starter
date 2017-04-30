@@ -110,6 +110,7 @@ processes specified in a ~Procfile~.
    React component for our application.
 ** step-006/jest
    :LOGBOOK:
+   CLOCK: [2017-04-29 Sat 19:39]--[2017-04-29 Sat 19:39] =>  0:00
    CLOCK: [2017-04-29 Sat 17:51]--[2017-04-29 Sat 18:28] =>  0:37
    :END:
 
@@ -137,3 +138,19 @@ processes specified in a ~Procfile~.
    order to be found by Jest -- a *dot* instead of an *underscore* as
    in minitest!! I could probably get around this difference, but I'm
    not going to bother to figure it out.
+** step-007/layout
+   :LOGBOOK:
+   CLOCK: [2017-04-29 Sat 19:39]--[2017-04-29 Sat 23:33] =>  3:54
+   :END:
+
+   [[https://github.com/styled-components/styled-components][Styled Components]]
+
+   Doing a Holy Grail Grid layout using styled components.
+
+   | header    | header       | header     |
+   |-----------+--------------+------------|
+   | left side | main content | right side |
+   |-----------+--------------+------------|
+   | footer    | footer       | footer     |
+
+   Using ~display: grid~ makes this so dang easy.
