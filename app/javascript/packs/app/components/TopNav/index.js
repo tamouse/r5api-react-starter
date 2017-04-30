@@ -2,12 +2,12 @@ import React, {Component} from 'react'
 import styled from 'styled-components'
 
 const Header = styled.header`
-    background-color: ${props => props.theme.main};
-    color: ${props => props.theme.background};
     grid-column: 1 / 4;
 `;
 
 const NavBar = styled.nav`
+    background-color: rebeccapurple;
+    color: ${props => props.theme.background};
     display: flex;
     justify-content: space-between;
     align-items: center;
