@@ -3,7 +3,7 @@
 A sample Rails 5.1 application that includes webpack and react
 components.
 
-See the [notes](notes.txt) file for progress and development notes.
+See the [docs](docs/) file for progress and development notes.
 
 ## Initialization
 
