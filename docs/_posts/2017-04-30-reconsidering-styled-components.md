@@ -17,7 +17,7 @@ into the styles, and is *so* much less verbose than writing the
 media queries out in CSS.
 
 
-{% highlight javascript %}
+```javascript
 // these sizes are arbitrary and you can set them to whatever you wish
 import { css } from 'styled-components'
 
@@ -49,7 +49,7 @@ const Container = styled.div`
   ${media.tablet`padding: 0 10px;`}
   ${media.phone`padding: 0 5px;`}
   `
-{% endhighlight %}
+```
 
 So cool.
 
