@@ -1,1 +1,1 @@
-/Users/tamara/Projects/Ruby.Stuff/rails5/r5api-react-starter/config/Guardfile
+config/Guardfile
